@@ -47,8 +47,9 @@
 <script>
 export default {
   name: 'App',
-  mounted() {
-    this.$store.dispatch('login')
+  async mounted() {
+    await this.$store.dispatch('login')
+    await this.$store.dispatch('getUser')
   },
 }
 </script>

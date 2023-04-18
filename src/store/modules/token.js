@@ -35,7 +35,7 @@ export default {
         },
         { headers }
       )
-      console.log(data.user.id)
+
       commit('setToken', data.token)
       commit('setUserId', data.user.id)
     },
