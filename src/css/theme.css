@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #fff;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 20px 15px 0 15px;
+}
+
+.account {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.account__title {
+  font-size: 18px;
+  font-weight: 600;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #e1e1e3;
+  border-radius: 3px;
+  padding: 8px 10px;
+  width: 240px;
+  height: 33.4px;
+  display: block;
+  color: #000;
+  font-size: 14px;
+  transition: all 0.3s;
+  outline: none;
+  padding: 8px 10px;
+}
+
+input:focus {
+  border-color: #2dc574;
+}
+
+label {
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 6px 10px 0 0;
+  padding: 0;
+  width: 120px;
+}
+
+small {
+  color: #a3a3a3;
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 400;
+}
