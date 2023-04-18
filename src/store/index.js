@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import tokenModule from './modules/token'
+import accountModule from './modules/account'
 
 Vue.use(Vuex)
 
@@ -8,5 +10,8 @@ export default new Vuex.Store({
   getters: {},
   mutations: {},
   actions: {},
-  modules: {},
+  modules: {
+    tokenModule,
+    accountModule,
+  },
 })
