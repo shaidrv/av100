@@ -30,8 +30,8 @@ export default {
       const { data } = await axios.post(
         url,
         {
-          login: '9994516078',
-          password: '2644157863',
+          login: process.env.VUE_APP_LOGIN,
+          password: process.env.VUE_APP_PASSWORD,
         },
         { headers }
       )
