@@ -14,7 +14,7 @@
                   class="input-field"
                   v-model="user[field.name]"
                 />
-                <small v-if="field.required === false">* Не обязательно</small>
+                <small v-if="!field.required">* Не обязательно</small>
               </div>
             </div>
           </div>
@@ -88,26 +88,10 @@ export default {
     return {
       profileFields: [
         { label: 'Компания', name: 'company', required: true },
-        {
-          label: 'Логин',
-          name: 'login',
-          required: true,
-        },
-        {
-          label: 'Номер телефона',
-          name: 'phone',
-          required: true,
-        },
-        {
-          label: 'Имя',
-          name: 'firstName',
-          required: true,
-        },
-        {
-          label: 'Фамилия',
-          name: 'lastName',
-          required: false,
-        },
+        { label: 'Логин', name: 'login', required: true },
+        { label: 'Номер телефона', name: 'phone', required: true },
+        { label: 'Имя', name: 'firstName', required: true },
+        { label: 'Фамилия', name: 'lastName', required: false },
       ],
     }
   },
