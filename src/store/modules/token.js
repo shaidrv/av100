@@ -35,7 +35,6 @@ export default {
         },
         { headers }
       )
-
       commit('setToken', data.token)
       commit('setUserId', data.user.id)
     },
